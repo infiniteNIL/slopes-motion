@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ModalNibViewController">
+            <connections>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5K-K3-UGw">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="EUw-wj-wUz"/>
+                    </constraints>
+                    <color key="tintColor" red="0.53333336109999996" green="0.0" blue="0.031372550870000002" alpha="1" colorSpace="deviceRGB"/>
+                    <items>
+                        <navigationItem title="Modal Nib" id="FLQ-KW-bHt">
+                            <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="z4c-Dh-fvn">
+                                <connections>
+                                    <action selector="done:" destination="-1" id="itt-W3-WKw"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="u5K-K3-UGw" secondAttribute="trailing" id="5Vf-Xr-fi8"/>
+                <constraint firstItem="u5K-K3-UGw" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Ilk-xk-21y"/>
+                <constraint firstItem="u5K-K3-UGw" firstAttribute="top" secondItem="1" secondAttribute="top" id="vaW-YK-HjP"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
